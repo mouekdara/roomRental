@@ -1,0 +1,15 @@
+services:
+  room-rental-db:
+    image: postgres:17
+    container_name:  room-rental-db
+    ports:
+      - "4445:5432"
+    environment:
+      POSTGRES_USER: dara
+      POSTGRES_PASSWORD: Admin@2025
+      POSTGRES_DB: room_rental_db
+    volumes:
+      - room-rental-vol:/var/lib/postgresql/data
+volumes:
+  room-rental-vol:
+  
