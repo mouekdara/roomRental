@@ -16,7 +16,7 @@ import lombok.*;
 public class Tenant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     @Column(name = "first_name", nullable = false, length = 100)
     private String firstName;
     @Column(name = "last_name", length = 100)

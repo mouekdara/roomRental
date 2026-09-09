@@ -23,7 +23,7 @@ import java.time.LocalDate;
 public class RentalContract {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @Column(name = "contract_number", nullable = false, unique = true)
     private String contractNumber;
